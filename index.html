@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News API</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="bg-orange-500 fixed top-0 left-0 w-full px-4">
+        <nav class="md:flex items-center gap-5 justify-between capitalize container mx-auto py-2 text-white">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-4xl font-bold">Logo.</a>
+
+                <div class="menu_bar md:hidden flex">
+                    <i class='bx bx-menu-alt-left text-6xl'></i>
+                </div>
+
+            </div>
+
+            <div class="nav_links items-center font-medium my-5 md:my-0 hidden md:flex md:gap-8">
+                <li class="py-5">
+                    <a href="javascript:void(0)"
+                        class="nav_link hover:text-gray-700 transition-all duration-300 ease-in" id="nepal"
+                        onclick="navItemSearch('nepal')">nepal</a>
+                </li>
+                <li class="">
+                    <a href="javascript:void(0)"
+                        class="nav_link hover:text-gray-700 transition-all duration-300 ease-in" id="finance"
+                        onclick="navItemSearch('finance')">finance</a>
+                </li>
+                <li class="py-5">
+                    <a href="javascript:void(0)"
+                        class="nav_link hover:text-gray-700 transition-all duration-300 ease-in" id="sports"
+                        onclick="navItemSearch('sports')">sports</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)"
+                        class="nav_link hover:text-gray-700 transition-all duration-300 ease-in" id="technology"
+                        onclick="navItemSearch('technology')">technology</a>
+                </li>
+            </div>
+
+
+            <div class="flex gap-4 justify-between items-center pt-4 md:pt-0">
+                <input type="text" id="search_input" placeholder="e.g. science"
+                    class="px-3 py-1 rounded outline-none text-black w-full ">
+                <button id="search_btn"
+                    class="border px-5 hover:bg-orange-400 transition-all duration-500 ease-in-out py-1 rounded-full ">search</button>
+            </div>
+
+        </nav>
+    </header>
+
+
+
+
+    <main class="pt-[140px] md:pt-28 px-10">
+        <div id="heading" class="container"></div>
+        <div id="news_container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-center">
+            
+        </div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
